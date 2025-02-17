@@ -1,0 +1,30 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="css/estilo1.css" rel="stylesheet" type="text/css" />
+	<title>Título da página</title>
+	<script language="javascript" src="js/funcao1.js"></script>
+</head>
+
+<body>
+	<form name="form" id="frmCadastro">
+		<fieldset>
+			<legend>NOTAS DO ESTUDANTE</legend>
+				<label for="campoNome">Nome: <input type="text" name="campoNome" id="campoNome" /> </label>
+				<label for="campoNota1">Nota 1: <input type="number" min="0" max="10" name="campoNota1" id="campoNota1" /> </label>
+				<label for="campoNota2">Nota 2: <input type="number" min="0" max="10"   name="campoNota2" id="campoNota2" /> </label>
+				<label for="campoNota3">Nota 3: <input type="number" min="0" max="10"   name="campoNota3" id="campoNota3" /> </label>
+				<label for="campoNota4">Nota 4: <input type="number" min="0" max="10"  name="campoNota4" id="campoNota4" /> </label>
+				<div id="situacao"></div>
+				<div id="erro"></div>
+		</fieldset>	
+	</form>
+
+	<div id="div_botao">
+		<button onclick="validarCampos();" id="btn">Calcular</button>
+	</div>
+	
+</body>
+
+</html>

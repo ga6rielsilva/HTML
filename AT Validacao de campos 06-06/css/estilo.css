@@ -1,0 +1,40 @@
+
+#botao{
+    width: 100px;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    margin-left: 20px;
+}
+#botao:hover{
+   background-color: blueviolet;
+   color:white;
+   cursor:pointer;
+}
+
+#escolha{
+  width:65px;
+  margin-left: 20px;
+  border-radius: 6px;
+  display:block ;
+  margin-bottom: 5px;
+  height: 30px;
+  text-align: center;
+  color:blue;
+
+}
+#resultado{
+   color:blue;
+   font-size: 30px;
+   margin-left:20px;
+}
+
+body{
+  width:600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li{
+  font-size: 1.5em;
+}

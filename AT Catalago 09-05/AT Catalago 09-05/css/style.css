@@ -1,0 +1,256 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Definição da cor da página e fonte a ser utilizada */
+body {
+  font-family: "Noto Sans KR", sans-serif;
+  background-color: aliceblue;
+}
+
+/* Cabeçalho */
+.page-header {
+  color: white;
+  background: #0D0D0D;
+  height: 10em;
+  display: flex;
+}
+
+.page-header span:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  color: firebrick;
+}
+
+.menu-header {
+  color: white;
+  background-color: #00A8FF;
+  height: 60px;
+  display: flex;
+  place-items: center;
+  border-bottom: 4.5px solid #007AB8;
+}
+
+.menu-header nav {
+  margin-left: 38px;
+}
+
+/* Organiza os anúncios um do lado do outro no centro */
+.catalog {
+  display: grid;
+  place-items: center;
+  padding: 5px;
+  margin: 5px;
+  /* background-color: purple; */
+}
+
+/* Coloca os anúncios lado a lado com limite de quatro por fileira */
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* background: red; */
+}
+
+.container-product {
+  margin: 5px;
+  display: flex;
+  /* background: red; */
+  justify-content: center;
+  height: auto;
+  width: auto;
+}
+
+.product-description {
+  background-color: #ccc;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.product-description2 {
+  background-color: white;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.product-description {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.product-description2 {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 30%;
+}
+
+.buttons {
+  margin-bottom: 5px;
+  display: grid;
+  margin-top: 55%;
+}
+
+.button {
+  background-color: rgb(56, 204, 140);
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+  font-weight: 550;
+  border: none;
+  box-shadow: 0px 2px 0px 0px #36b07b;
+  cursor: pointer;
+  margin: 5px;
+  height: 50px;
+  width: 150px;
+  border-radius: 3px;
+}
+
+.product-description, .product-description2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+}
+
+.product-description, .product-description2 {
+  padding: 25px;
+}
+
+.desc-product-img {
+  padding: 15px;
+  place-items: left;
+  max-width: 356px;
+}
+
+/* Estilização dos anúncios */
+.box {
+  font-size: small;
+  padding: 5px;
+  margin: 8px;
+  margin-bottom: 10px;
+  width: 266px;
+  height: auto;
+  border-radius: 3px;
+  box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.4);
+  background: aliceblue;
+}
+
+/* Fontes */
+/* Fontes */
+/* Fontes */
+a {
+  text-decoration: none;
+  color: black;
+
+}
+
+.title-product {
+  margin-left: 5px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.title-product2 {
+  font-size: x-large;
+  margin-left: 5px;
+  line-height: 20px;
+  margin-bottom: 5px;
+}
+
+.page-header h1 {
+  display: flex;
+  align-items: center;
+  margin-left: 35px;
+}
+
+.price-product {
+  display: grid;
+  margin-left: 5px;
+  margin: 5px;
+}
+
+.price-product2 {
+  display: grid;
+  margin-left: 5px;
+  font-size: large;
+  margin: 5px;
+}
+
+.price-product h3 {
+  font-size: large;
+}
+
+.discount {
+  color: #00a650;
+  font-size: smaller;
+  font-weight: 360;
+}
+
+.free-delivery {
+  color: #03a853;
+  font-weight: bolder;
+}
+
+.page-footer h4 {
+  margin-left: 109px;
+}
+/* Fontes */
+/* Fontes */
+/* Fontes */
+
+/* Rodape */
+.menu-header a,
+.menu-footer a {
+  color: white;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 6px;
+}
+
+.menu-header a:hover {
+  background-color: #0097E5;
+  color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.catalog-image {
+  margin-top: 5px;
+  margin-left: 5px;
+  position: relative;
+  width: 256px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+.page-footer {
+  color: white;
+  background: #131313;
+  height: 8em;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding: 5px;
+}
+
+.menu-footer a:hover {
+  color: #FFB400;
+}
+
+.menu-footer {
+  color: white;
+  background-color: #212121;
+  height: 100px;
+  display: flex;
+  place-items: center;
+}
+
+.menu-footer nav {
+  margin-left: 100px;
+  font-weight: 150;
+}

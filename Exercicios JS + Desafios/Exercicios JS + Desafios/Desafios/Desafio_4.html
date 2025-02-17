@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 4</title>
+</head>
+<body>
+    <script>
+        var salarioHora = parseFloat(prompt("Informe quanto você ganha por hora"))
+        var horasTrabalhadas = parseFloat(prompt("Informe o total de horas trabalhadas neste mês"))
+        
+        var salarioBruto = salarioHora * horasTrabalhadas
+        
+        var impostoRenda = salarioBruto * 0.11
+        var inss = salarioBruto * 0.08
+        var sindicato = salarioBruto * 0.05
+
+        function calcularSalario() {
+            var salarioLiquido = salarioBruto - impostoRenda - inss - sindicato
+            return salarioLiquido
+        }
+
+        document.write("<br>" + "Salário bruto: R$ " + salarioBruto.toFixed(2))
+        document.write("<br>" + "Imposto de Renda: R$ " + impostoRenda.toFixed(2))
+        document.write("<br>" + "INSS: R$ " + inss.toFixed(2))
+        document.write("<br>" + "Sindicato: R$ " + sindicato.toFixed(2))
+        document.write("<br>" + "Salário líquido: R$ " + calcularSalario().toFixed(2))
+    </script>
+</body>
+</html>

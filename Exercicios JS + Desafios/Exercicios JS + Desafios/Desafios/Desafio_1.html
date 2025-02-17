@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+</head>
+
+<body>
+    <script>
+        var valorFabrica = parseFloat(prompt("Informe o valor de fabricação do produto"))
+        var porcentagemComissao = parseFloat(prompt("Informe a porcentagem para comissão do representante"))
+        var porcentagemMargem = parseFloat(prompt("Informe a porcentagem para a margem de lucro"))
+        var porcentagemImpostos = parseFloat(prompt("Informe a porcentagem de impostos para o governo"))
+
+        if (isNaN(valorFabrica) || isNaN(porcentagemComissao) || isNaN(porcentagemMargem) || isNaN(porcentagemImpostos) || valorFabrica <= 0 || porcentagemComissao <= 0 || porcentagemMargem <= 0 || porcentagemImpostos <= 0) {
+            document.write("Informe dados válidos!")
+        } else {
+            let comissaoRepresentante = valorFabrica * (porcentagemComissao / 100)
+            let margemLucro = valorFabrica * (porcentagemMargem / 100)
+            let impostosGoverno = valorFabrica * (porcentagemImpostos / 100)
+            let valorFinal = valorFabrica + comissaoRepresentante + margemLucro + impostosGoverno
+
+            document.write("Preço de fabricação = R$ " + valorFabrica.toFixed(2))
+            document.write("<br>" + "Comissão = R$ " + comissaoRepresentante.toFixed(2))
+            document.write("<br>" + "Margem de lucro = R$ " + margemLucro.toFixed(2))
+            document.write("<br>" + "Impostos do Governo = R$ " + impostosGoverno.toFixed(2))
+            document.write("<br>" + "Valor para varejo = R$ " + valorFinal.toFixed(2))
+        }
+    </script>
+</body>
+
+</html>

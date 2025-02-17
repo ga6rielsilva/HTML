@@ -1,0 +1,118 @@
+
+body{
+	background-color: cornflowerblue;
+}
+
+
+#frmCadastro {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	margin-top: 100px;
+	background-color: rgb(208, 212, 223);
+}
+
+#frmCadastro label {
+	display: block;
+	margin-bottom: 20px;
+}
+
+
+#frmCadastro label input:hover {
+	border: 1px dashed blue;
+	
+}
+
+#frmCadastro label input {
+	width: 0px;
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 7px;
+}
+
+#frmCadastro #campoNome{
+	width:400px;
+}
+
+#frmCadastro #campoNota1,  #frmCadastro #campoNota2, #frmCadastro #campoNota3, #frmCadastro #campoNota4 {
+	width:70px;
+	text-align: center;
+}
+
+#campoNome {
+	margin-left: 5px;
+	border: 1px dashed blue
+}
+
+#campoNota1 #campoNota2 #campoNota3 #campoNota4  {
+	margin-left: 5px;
+}
+
+#frmCadastro input {	
+	border: 1px solid gray;
+	border-radius: 10px;
+	padding: 7px;
+	
+}
+
+#frmCadastro label{	
+	font-size:20px;
+}
+#campoNota1  {
+	width:20px;
+}
+
+#div_botao{
+	margin-left:  auto;
+	margin-right: auto;
+	width:200px;
+}
+
+
+#btn {
+	border-radius: 10px;
+	border: 1px solid gray;
+	background-color: blue;
+	color: white;	
+	padding: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor:pointer;
+	width:120px;
+	margin-left: 0px;
+	font-size:25px;
+}
+
+legend{
+	font-size: 25px;
+}
+
+#btn:hover {
+	background: black;
+	border:1px dashed gray;
+}
+
+#erro {
+	color:red;
+	font-size: 20px;
+}
+#situacao {
+	color:rgb(0, 0, 0);
+	font-size: 20px;
+}
+
+.aprovado {
+	color: green;
+	font-weight: bold;
+}
+
+.exame {
+	color: yellow;
+	font-weight: bold;
+}
+
+.reprovado {
+	color: red;
+	font-weight: bold;
+}

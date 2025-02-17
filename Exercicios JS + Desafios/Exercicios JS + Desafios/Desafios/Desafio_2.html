@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 2</title>
+  </head>
+  <body>
+    <script>
+      var salarioFixo = 1500.0;
+      var comissaoPorVeiculo = 250;
+      var comissaoVeiculosVendidos = 0.05;
+
+      var nomeFuncionario = prompt("Informe o nome do funcionário");
+      var vendasFuncionario = parseInt(prompt("Quantidade de veículos vendidos pelo funcionário"));
+      var vendasTotal = parseInt(prompt("Total de veículos vendido pela concessionária"));
+
+      if (isNaN(vendasFuncionario) || isNaN(vendasTotal) || vendasFuncionario < 0 || vendasTotal <= 0) {
+        document.write("Informe os dados de vendas corretamente.");
+      } else {
+        var comissaoTotal = (vendasFuncionario * comissaoPorVeiculo) + (vendasTotal * comissaoVeiculosVendidos);
+        var salarioFinal = salarioFixo + comissaoTotal;
+
+        document.write("Nome do vendedor: " + nomeFuncionario);
+        document.write("<br>" + "Comissão: " + comissaoTotal);
+        document.write("<br>" + "Salário total: " + salarioFinal);
+      }
+    </script>
+  </body>
+</html>

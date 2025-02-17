@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 3</title>
+</head>
+<body>
+    <script>
+        var horas = parseInt(prompt("Informe quanto tempo durou o atendimento (horas)"))
+        var minutos = parseInt(prompt("Informe quanto tempo durou o atendimento (minutos)"))
+        var segundos = parseInt(prompt("Informe quanto tempo durou o atendimento (segundos)"))
+
+        function conversorSegundos() {
+            let conversor = (horas * 60 * 60) + (minutos * 60) + segundos
+            return conversor
+        }
+
+        if (isNaN(horas) || isNaN(minutos) || isNaN(segundos) || horas < 0 || minutos < 0 || segundos < 0) {
+            document.write("Informe os dados de duração corretamente.")
+        } else {
+            document.write("O atendimento durou " + conversorSegundos() + " segundos.")
+        }
+    </script>
+</body>
+</html>

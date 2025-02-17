@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7</title>
+</head>
+
+<body>
+    <script>
+        var valorProduto = parseFloat(prompt("Informe o valor do produto"))
+        var quantidade_parcelas = parseInt(prompt("Informe em quantas vezes você deseja parcelar"))
+
+        if (isNaN(valorProduto) || isNaN(quantidade_parcelas) || valorProduto <= 0 || quantidade_parcelas <= 0) {
+            document.write("Informe um valor válido para o valor do produto ou a quantidade de parcelas")
+        } else {
+            valor_final = valorProduto / quantidade_parcelas
+            document.write("Você pagará no total R$ " + valorProduto.toFixed(2) + " divido em " + quantidade_parcelas + " parcelas de R$" + valor_final.toFixed(2))
+        }
+
+        var valor_revenda = parseFloat(prompt("Informe o preço de revenda"))
+
+
+    </script>
+</body>
+
+</html>
